@@ -1,6 +1,7 @@
 const config = {
-  collectCoverage: true,
+  testEnvironment: 'node',
+  collectCoverage: false,
   coverageDirectory: 'coverage'
-}
+};
 
-module.exports = config
+module.exports = config;
