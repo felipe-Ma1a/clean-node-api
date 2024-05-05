@@ -4,12 +4,16 @@
   "description": "Projeto para criar uma API utilizando NodeJs",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "test:watch": "jest --watchAll",
+    "test": "jest --watchAll",
+    "test:staged": "jest",
     "prepare": "husky"
   },
   "lint-staged": {
-    "**/*": "prettier --write --ignore-unknown"
+    "*.js": [
+      "prettier --write --ignore-unknown",
+      "npm run test:staged",
+      "git add"
+    ]
   },
   "author": "",
   "license": "ISC",
