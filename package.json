@@ -12,8 +12,7 @@
   "lint-staged": {
     "*.js": [
       "prettier --write --ignore-unknown",
-      "npm run test:staged",
-      "git add"
+      "npm run test:staged"
     ]
   },
   "author": "",
