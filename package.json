@@ -6,6 +6,7 @@
   "scripts": {
     "test": "jest --watchAll --silent --noStackTrace",
     "test:staged": "jest --passWithNoTests --findRelatedTests --silent --noStackTrace",
+    "test:ci": "jest --coverage",
     "prepare": "husky"
   },
   "lint-staged": {
