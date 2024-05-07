@@ -1,7 +1,8 @@
 const config = {
   testEnvironment: 'node',
-  collectCoverage: false,
-  coverageDirectory: 'coverage'
+  collectCoverage: true,
+  coverageDirectory: 'coverage',
+  collectCoverageFrom: ['**/src/**/*.js']
 };
 
 module.exports = config;
