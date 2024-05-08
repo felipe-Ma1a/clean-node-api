@@ -1,6 +1,6 @@
 const config = {
   testEnvironment: 'node',
-  collectCoverage: true,
+  collectCoverage: false,
   coverageDirectory: 'coverage',
   collectCoverageFrom: ['**/src/**/*.js']
 };
